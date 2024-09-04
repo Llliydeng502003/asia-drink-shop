@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body onload="Shop.start()">
+<div class='wrapper'>
+<header class='header'>
+  <div class="navbar" style="float:left">
+    <a onclick="Ui.openNav()" style="cursor:pointer">&#987070;</a>
+  </div>
+  <div class="navbar" style="float:right">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fa fa-user"></i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="login.html">登入</a>
+        <a href="signup.html">註冊</a>
+      </div>
+    </div>
+    <a href="homepage.html" id="menuShopName">店名</a>
+  </div>
+</header>
+<aside>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="Ui.closeNav()">&times;</a>
+    <a href="comment.html">發訊息給商店</a>
+    <a href="map.html">商店地圖</a>
+  </div>
+</aside>
+<form action="homepage.html">
+    <fieldset>
+      <legend>個人資料</legend>
+    <label for="username">帳號:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">密碼:</label><br>
+    <input type="password" id="pwd" name="pwd"><br/>
+    <label for="email">電子信箱:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="ph">手機號碼:</label><br>
+    <input type="text" id="phone" name="phone"><br>
+
+    <label for="sex">性別:</label><br>
+    <input type="radio" name="sex" value="male" checked/> 男
+    <input type="radio" name="sex" value="female"/> 女<br/>
+  
+    <label>從何處知道店家</label><br>
+  <select id="cars" name="cars">
+    <option value="friend">朋友推薦</option>
+    <option value="usual">日常經過</option>
+    <option value="midia">社群廣告</option>
+    <option value="tv">電視媒體</option>
+  </select><br/>
+  
+    <label for="birthday">生日:</label><br/>
+    <input type="date" id="birthday" name="birthday">
+    <br/>
+  <br/><br/>
+      <button>註冊</button><br/><br/>
+  <input type="checkbox" name="subscribe" value="subscribe">
+  <label>我願意訂閱電子報</label>
+    </fieldset>
+  </form>
+ <div class="push"></div>
+</div>
+</body>
+
+<footer class="footer">
+  <div id="footer">
+    <p>phone:0953195080  site:台中市霧峰區柳豐路500號I棟1樓</p>
+  </div>
+</footer>
+</div>
+<script src="Shop.js"></script>
+<script src="Pos.js"></script>
+<script src="Report.js"></script>
+<script src="Setting.js"></script>
+<script src="Lib.js"></script>
+<script src="Ui.js"></script>
+<script src="slider.js"></script>
+</body>
+</html>
